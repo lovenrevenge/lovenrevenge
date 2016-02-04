@@ -1,0 +1,335 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -o-text-size-adjust: 100%;
+   font-family: 'Didact Gothic', sans-serif;
+    color: black;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+    margin:0;
+    padding:0;   
+    
+}
+
+
+.opacity {
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+ 	-webkit-transition: opacity .5s linear;
+	}	
+	
+.opacity:hover {
+	opacity: 1;
+	filter: alpha(opacity=100);
+ 	-webkit-transition: opacity .5s linear;
+	}
+
+
+.grayscale {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+}
+
+.grayscale:hover {
+  filter: none;
+  -webkit-filter: grayscale(0%);
+}
+
+
+.lr-logo{
+    margin: .75em 0 0;
+    height: 75px;
+    width: auto;
+}
+
+.dt-nav{
+    list-style-type: none;
+    padding-left: 0;
+    float:right;
+    width:80%;
+    margin: 1em 0 0;
+   
+}
+
+.dt-nav li{
+    display:inline-block;
+    float:right;
+    width: 20%;
+    text-align: center;
+     padding:1em;      
+    border: 2px solid white;
+    background-color: black;
+}
+
+.dt-nav li:hover{
+    background-color:  #cf0a2c;
+    color:white;
+}
+
+
+.dt-nav a{
+     text-decoration: none;
+    color:white;
+    text-transform: uppercase;
+    
+}
+
+
+
+.banner{
+
+    height: 120px;
+    width:100%;
+    background-color:white;
+    position: fixed;
+    z-index: 70;
+    display: inline-block;
+    border-bottom: 3px solid #cf0a2c ;
+    overflow: hidden;
+    top:0;
+    
+}
+
+.container{
+    margin: 2em 10% 3em;    
+}
+
+
+.header{
+    font-weight: 300;
+    font-size: 3em;
+    
+}
+
+
+.top-logo{
+    float: left;
+    width: 200px;
+    position: absolute;
+    left: 2%;
+    top: 10px;
+
+}
+
+.small-trenches-logo{
+    width: 120%;
+    height: 120%;
+    margin: 0;
+}
+
+
+footer{
+    border-top: 3px solid #cf0a2c ;
+    height: auto;
+    background-color: black ;
+    width:100%;
+    bottom:0;
+    margin:7em auto 0;
+    overflow: hidden;
+    padding: 1em 0 5em;
+}
+
+.footer2{
+    width: 100%;
+    background-color:black;
+    height: auto;
+    
+}
+
+.logos{
+    list-style-type: none;
+     text-decoration: none;
+    text-align: center;
+    overflow: hidden;
+    padding: 1em 0 2em 10px;
+    margin:0;
+}
+
+.logos img{
+    height: 50px;   
+    width: auto;
+}
+
+.logos a{
+    text-decoration: none;   
+    
+}
+
+.logos li{
+    display: inline-block;
+    height:auto;
+    width: 16%;
+}
+
+
+
+.box{
+    width:100%;
+    height: 500px;
+    text-align: center;
+    background-color: grey;
+    margin: 120px 0 0;
+    position:relative;
+    
+}
+
+.box h1{
+    text-transform: uppercase;
+    font-size: 1.5em;
+    color:white;
+    bottom:15px;
+    position:absolute;
+    left: 15px;
+    
+} 
+
+
+
+hr{
+    margin: 4em 0 0;
+    border: solid 2px #cf0a2c;
+}
+
+  
+
+.contact{
+    color:white;   
+    text-align: center;
+}
+
+.contact h1{
+    text-transform: uppercase;
+}
+
+.contact ul{
+      list-style-type: none;
+    padding-left: 0;
+       
+    
+}
+
+.social{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 auto 0;
+
+}
+
+.social-icon{
+    width: 50px;   
+    height: 50px;
+   
+  
+}
+
+.social-container{
+    padding-left: 0;
+    margin: 3em auto 0;
+     text-align: center;
+}
+
+
+.email{
+    list-style-type: none;
+    color:white;
+    margin:.5em 0 0;
+    text-decoration: none;
+}
+
+
+.service{
+    width: 100px;
+    height: auto;
+    display:inline-block;
+
+    margin: 1em 5% 0 1em;
+}
+
+
+.services-icon{
+    height: 50px;
+}
+
+.services-container{
+    text-align: center;
+    width:100%;
+
+}
+
+.services-info h1{
+    margin: 1em 0 1em;   
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.service > img{
+    margin: 0 25px 0;   
+}
+
+.service > figcaption{
+    font-size: .75em;
+    
+}
+
+.services-info{
+    margin: 0 0 5% 0;   
+    
+}
+
+.contact h1{
+    font-size: 1.5em;   
+    
+}
+
+
+
+
+@media only screen and (min-width: 40em) {
+ 
+    .container{
+        margin: 2em 15% 3em;    
+    }
+}
+
+
+@media only screen and (min-width: 50em) {
+ 
+    
+    .container{
+        margin: 2em 20% 3em;    
+    }
+}
+
+@media only screen and (min-width: 50em) {
+ 
+    
+    .container{
+        margin: 2em 20% 3em;    
+    }
+}
+
+@media only screen and (min-width: 60em) {
+ 
+    
+    .container{
+        margin: 2em 20% 3em;    
+    }
+}
+
+
