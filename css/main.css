@@ -56,48 +56,66 @@ body{
 /* NAVIGATION */
 
 .lr-logo{
-    margin: 1em 0 0;
-    height: 65px;
-    width: auto;
+    height: auto;
+    margin: .5em 0 0;
+    width: 200px;
 }
 
 .top-logo{    
     margin: .2em 5% 0;
+    width: calc(100%-50px);
 }
-
-
-
 
 .x{
     display: none; 
-    margin: .5em 2% .5em;
     float:right;
-    margin: 1em;
     cursor: pointer;
+    margin: .8em 2% 0;
 }
+
 
 
 .ham {
     height: 50px;
     width: 50px;
     float: right;
-    margin: 1.25em 10% .5em;
+    margin: .8em 2% 0;
+
     position: relative;
     opacity: 1;
     cursor: pointer;
 }
 
 
-.mobile-nav {
+.mobile-nav{
 	display: none;
-   
+    list-style-type: none;
+    padding-left: 0;
+   text-align: center;
+}
+
+.top-nav-li{
+    color:black;
+    font-size: 2em;
+    margin:.25em auto 0;
+    border-bottom: 1px solid #efefef;
+    display: block;
+}
+
+.top-nav-li:last-child {
+    padding: .25em auto 2em;   
+    
+}
+.mobile-nav a{
+    text-decoration: none;   
+    
 }
 
 
 /* This selected targets the `.nav` only when the checkbox is checked */
 .nav-check:checked ~ .mobile-nav{
 	display: block;
-    height: 100vh;
+    height: 125px;
     background-color: rgba(255,255,255,.95);
      
 }
@@ -127,7 +145,7 @@ body{
 }
 
 .banner{
-    height: 110px;
+    height: 80px;
     width:100%;
     background-color:white;
     position: fixed;
@@ -135,6 +153,7 @@ body{
     display: inline-block;
     border-bottom: 3px solid #cf0a2c ;
     top:0;
+    position: relative;
     
 }
 
@@ -185,6 +204,8 @@ body{
 .header{
     font-weight: 300;
     font-size: 3em;
+    position: absolute;
+    
     
 }
 
@@ -226,6 +247,7 @@ footer{
     width: 100%;
     background-color:black;
     height: auto;
+    padding: 1em 0 0;
     
 }
 
@@ -239,8 +261,9 @@ footer{
 }
 
 .logos img{
-    height: 50px;   
+    height: 30px;   
     width: auto;
+    margin: .1em 1% .1em;
 }
 
 .logos a{
@@ -334,7 +357,7 @@ hr{
     height: 0; 
     overflow: hidden; 
     max-width: 100%; 
-    margin: 6.25em 0 0;
+    margin: 0;
 } 
 
 .embeded-container h1{
@@ -365,23 +388,34 @@ hr{
 @media only screen and (min-width: 40em) {
  
     .container{
-        margin: 2em 15% 3em;    
+        margin: 2em 15% 3em; 
+           transition: all .3s ease-in;
     }
-}
-
-
-@media only screen and (min-width: 50em) {
     
-    .top-logo{
-    float: left;
-    width: auto;
-    position: absolute;
-    left: 2%;
-    top: 0;
-
+    .lr-logo{
+    width: 300px;
+    transition: all .3s ease-in;
 }
- 
-.dt-nav{
+    
+        .banner{
+        height: 110px;   
+                  transition: all .3s ease-in;
+    }
+    
+    .logos img{
+        height: 50px;   
+        
+    }
+    
+    .ham{
+        display:none;
+    }
+    
+    .x{
+        display:none;
+    }
+    
+    .dt-nav{
     list-style-type: none;
     padding-left: 0;
     float:right;
@@ -413,16 +447,29 @@ hr{
 .dt-nav a{
      text-decoration: none;
     text-transform: uppercase;
+    color:black;
+    font-weight: 400;
     
 }
+    .top-logo{    
+    margin: .2em 1em 0;
     
-    .container{
-        margin: 2em 20% 3em;    
-    }
+    
 }
 
+
 @media only screen and (min-width: 50em) {
+    
+
+       .embed-container{
+        margin: -.5em auto auto;   
+    }
+    
+    
+    
+
  
+
     
     .container{
         margin: 2em 20% 3em;    
@@ -430,6 +477,16 @@ hr{
 }
 
 @media only screen and (min-width: 60em) {
+ 
+    
+    .container{
+        margin: 2em 20% 3em;    
+    }
+    
+    
+}
+
+@media only screen and (min-width: 70em) {
  
     
     .container{
