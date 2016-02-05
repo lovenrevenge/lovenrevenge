@@ -41,61 +41,92 @@ body{
 
 
 .grayscale {
-  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
-  filter: gray; /* IE6-9 */
-  -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
 }
 
 .grayscale:hover {
-  filter: none;
-  -webkit-filter: grayscale(0%);
+    filter: none;
+    -webkit-filter: grayscale(0%);
 }
 
 
+
+/* NAVIGATION */
+
 .lr-logo{
-    margin: .75em 0 0;
-    height: 75px;
+    margin: 1em 0 0;
+    height: 65px;
     width: auto;
 }
 
-.dt-nav{
-    list-style-type: none;
-    padding-left: 0;
+.top-logo{    
+    margin: .2em 5% 0;
+}
+
+
+
+
+.x{
+    display: none; 
+    margin: .5em 2% .5em;
     float:right;
-    width:80%;
-    margin: 1em 0 0;
-    position: absolute;
-    bottom:0;
-    right:0;
-    
+    margin: 1em;
+    cursor: pointer;
+}
+
+
+.ham {
+    height: 50px;
+    width: 50px;
+    float: right;
+    margin: 1.25em 10% .5em;
+    position: relative;
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+.mobile-nav {
+	display: none;
    
 }
 
-.dt-nav li{
-    display:inline-block;
-    float:right;
-    width: 12%;
-    text-align: center;
-     padding:.25em 0 .25em;      
-    border: 2px solid white;
+
+/* This selected targets the `.nav` only when the checkbox is checked */
+.nav-check:checked ~ .mobile-nav{
+	display: block;
+    height: 100vh;
+    background-color: rgba(255,255,255,.95);
+     
 }
 
-.dt-nav li:hover{
-    transition: all .5s;
-    text-decoration: underline;
+.nav-check:checked ~ .nav-label .ham{
+	display: none;
+}
+
+.nav-check:checked ~ .nav-label .x{
+	display: block;
+    float: right;
+    height: 50px;
+    width: 50px;
+}
+
+.nav-check {
+	/* Put the checkbox off the top of the screen */
+	position: absolute;
+	top: -6em;
 }
 
 
-.dt-nav a{
-     text-decoration: none;
-    text-transform: uppercase;
+
+.dt-nav{
+    display:none;   
     
 }
 
-
-
 .banner{
-
     height: 110px;
     width:100%;
     background-color:white;
@@ -103,13 +134,51 @@ body{
     z-index: 70;
     display: inline-block;
     border-bottom: 3px solid #cf0a2c ;
-    overflow: hidden;
     top:0;
     
 }
 
+
+.panel{
+    float: right;   
+    height: 100vh;
+    background-color: white;
+    width: 100%;
+    display: none;
+    z-index: 80;
+}
+
+.top-nav{
+    float: right;      
+}
+
+.panel ul{
+    list-style-type: none;
+    margin: 50% auto 0;
+    text-align: center;
+    padding: 0;
+}
+
+
+
+.panel ul li:hover{
+    text-decoration: line-through;  
+}
+
+.panel ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;   
+}
+
+
 .container{
     margin: 2em 10% 3em;    
+}
+
+.credits{
+    list-style-type: none;
+    padding-left: 0;
 }
 
 
@@ -120,13 +189,19 @@ body{
 }
 
 
-.top-logo{
-    float: left;
-    width: 200px;
-    position: absolute;
-    left: 2%;
-    top: 0;
 
+
+.vid-title{
+    font-size: 1.5em;   
+    margin:0;
+    padding:0;
+    
+}
+
+.vid-sub-title{
+    margin: .2em 0 1em;
+    padding: 0;
+    
 }
 
 .small-trenches-logo{
@@ -194,15 +269,7 @@ footer{
     
 }
 
-.vid h1{
-    text-transform: uppercase;
-    font-size: 1.5em;
-    color:white;
-    bottom:15px;
-    position:absolute;
-    left: 15px;
-    
-} 
+
 
 
 
@@ -239,8 +306,6 @@ hr{
 .social-icon{
     width: 50px;   
     height: 50px;
-   
-  
 }
 
 .social-container{
@@ -258,49 +323,41 @@ hr{
 }
 
 
-.service{
-    width: 100px;
-    height: auto;
-    display:inline-block;
-
-    margin: 1em 5% 0 1em;
-}
-
-
-.services-icon{
-    height: 50px;
-}
-
-.services-container{
-    text-align: center;
-    width:100%;
-
-}
-
-.services-info h1{
-    margin: 1em 0 1em;   
-    font-size: 1.5em;
-    text-align: center;
-}
-
-.service > img{
-    margin: 0 25px 0;   
-}
-
-.service > figcaption{
-    font-size: .75em;
-    
-}
-
-.services-info{
-    margin: 0 0 5% 0;   
-    
-}
-
 .contact h1{
     font-size: 1.5em;   
     
 }
+
+.embed-container { 
+    position: relative; 
+    padding-bottom: 56.25%; 
+    height: 0; 
+    overflow: hidden; 
+    max-width: 100%; 
+    margin: 6.25em 0 0;
+} 
+
+.embeded-container h1{
+    text-transform: uppercase;
+    font-size: 1.5em;
+    color:white;
+    bottom:15px;
+    position:absolute;
+    left: 15px;
+    
+} 
+
+
+.embed-container iframe, 
+.embed-container object, 
+.embed-container embed { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+}
+
 
 
 
@@ -314,7 +371,50 @@ hr{
 
 
 @media only screen and (min-width: 50em) {
+    
+    .top-logo{
+    float: left;
+    width: auto;
+    position: absolute;
+    left: 2%;
+    top: 0;
+
+}
  
+.dt-nav{
+    list-style-type: none;
+    padding-left: 0;
+    float:right;
+    width:80%;
+    margin: 1em 0 0;
+    position: absolute;
+    bottom:0;
+    right:0;
+    display: block;
+    
+   
+}
+
+.dt-nav li{
+    display:inline-block;
+    float:right;
+    width: 12%;
+    text-align: center;
+     padding:.25em 0 .25em;      
+    border: 2px solid white;
+}
+
+.dt-nav li:hover{
+    transition: all .5s;
+    text-decoration: underline;
+}
+
+
+.dt-nav a{
+     text-decoration: none;
+    text-transform: uppercase;
+    
+}
     
     .container{
         margin: 2em 20% 3em;    
