@@ -12,13 +12,45 @@
     
 <body>
     
-  <header class="banner">
-      
-       <div class="top-logo">
+ <header id="header" class="banner">
+      <input type="checkbox" class="nav-check" id="nav-check">
+	   <label class="nav-label" for="nav-check">
+            <img src="images/ham.svg" alt="hamburger button" class="ham">
+            <img src="images/x.svg" alt="x" class="x">
+        </label>
+     
+          <div class="top-logo">
            <a href="index.html">
                 <img src="images/lr-logo.svg" class="lr-logo">
             </a>
         </div>
+      
+  
+      <ul class="mobile-nav" role="navigation" id="nav">
+            
+          <a href="#">
+                 <li class="top-nav-li">
+                    Band
+                </li>
+            </a>
+            
+          <a href="#">
+                 <li class="top-nav-li">
+                    News
+                </li>
+            </a>
+          
+          <a href="#">
+                 <li class="top-nav-li">
+                    Music
+                </li>
+          </a>
+      </ul>
+      
+    </header>
+      
+      
+
       
       <ul class="dt-nav">
             
@@ -41,86 +73,98 @@
           </a>
       </ul>
 
-    </header>
 
-    
-    <div class="vid">
-         <h1>Debut Music Video: Breathe</h1>
-        
+    <div class='embed-container'>
+            <iframe src='http://www.youtube.com/embed/QILiHiTD3uc' frameborder='0' allowfullscreen>
+            </iframe>
     </div>
     
+    
+
+    
     <div class="container">
-        <p>Love 'N Revenge has done it again with a moving musical performance and lyrics by Damon Kelly.</p>
-    
- 
-    
-   
         
-    
+        <div class="title-bg">
+        
+            <h2 class="vid-title">Debut Music Video:</h1>
+            <h1 class="vid-sub-title">Breathe</h1>
             
-    </div>    
-    
-    
-</body>
-    <footer>
-    
-<div class="grid">
-    <div class="unit unit-xs-1 uni-s-1 unit-m-1-2 unit-l-1-2 unit-xl-1-2">
-    <div class="contact">
-        <h1>Contact.</h1>
-            <ul>    
-                <li>
-                   Love 'N Revenge
-                </li>
-                
-                <li>
-                    Toronto, ON
-                </li>
-                
-            </ul>     
-            
-            
-            
-               <ul>    
-                
-                <li><address> <a href= "mailto:info@lovenrevenge.com" class="email">
-                    info@lovenrevenge.com</a>
-                    </address>
-                </li>
-                
-            </ul> 
-                    
         </div>
         
-                <ul class="social-container">
-          
-          
-        <a href=""></a> 
+        <p>Love 'N Revenge has done it again with a moving musical performance and lyrics by Damon Kelly.</p>
+        
+        
+        <ul class="credits">
+            
+            <li>
+                <strong>Lyrics and Vocals:</strong> Damon Kelly
+            </li>
+            
+            <li>
+                <strong>Music Recording:</strong> Universal Records
+            </li>
+            
+            <li>
+                <strong>Video Productions:</strong> The Trenches Media
+            </li>
+        
+        </ul>  
+    </div>    
+    
+<footer>
+    
+    <div class="grid">
+        <div class="unit unit-xs-1 uni-s-1 unit-m-1-2 unit-l-1-2 unit-xl-1-2">
+            <div class="contact">
+                <h1>Contact.</h1>
+                    <ul>    
+                        <li>
+                            Love 'N Revenge
+                        </li>
+                
+                        <li>
+                            Toronto, ON
+                        </li>
+                
+                    </ul>     
+            
+                    <ul>    
+                
+                        <li>
+                            <address> 
+                                <a href= "mailto:info@lovenrevenge.com" class="email">
+                    info@lovenrevenge.com</a>
+                            </address>
+                        </li>
+                
+                    </ul> 
+                    
+            </div>
+        
+                
+     <ul class="social-container">
         
         <li class="social opacity">
             <a href="https://www.facebook.com/Love-N-Revenge-195729757121283/?fref=ts">   
-            <img src="images/fb.svg" class="social-icon">  
+                <img src="images/fb.svg" class="social-icon">  
             </a> 
         </li>
         
         <li class="social opacity">
             <a href="https://instagram.com/thetrenches/">
-            <img src="images/insta.svg" class="social-icon">
+                <img src="images/insta.svg" class="social-icon">
             </a>
         </li>
             
         <li class="social opacity">
             <a href="https://twitter.com/LOVENREVENGE">
-            <img src="images/twitter.svg" class="social-icon">    
+                <img src="images/twitter.svg" class="social-icon">    
             </a>
         </li>
-              
-        
-
-        </ul>
+    </ul>
+            
         </div>
-    
-</div>
+    </div>
         
 
     </footer>
@@ -207,4 +251,9 @@
     
     
     </div>
+    
+    </div>
+</div>
+
+</body>
 </html>
