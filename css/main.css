@@ -115,7 +115,8 @@ body{
 /* This selected targets the `.nav` only when the checkbox is checked */
 .nav-check:checked ~ .mobile-nav{
 	display: block;
-    height: 125px;
+    height: auto;
+    margin: 0 auto .25em;
     background-color: rgba(255,255,255,.95);
      
 }
