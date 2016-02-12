@@ -1,0 +1,5 @@
+markdown: redcarpet
+permalink: pretty
+baseurl: "/lovenrevenge"
+exclude: ['README.md']
+exclude: [scss]
