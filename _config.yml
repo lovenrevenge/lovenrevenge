@@ -1,5 +1,5 @@
 markdown: redcarpet
 permalink: pretty
-baseurl: "/lovenrevenge"
+baseurl: ""
 exclude: ['README.md']
 exclude: [scss]
