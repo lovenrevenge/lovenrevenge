@@ -1671,7 +1671,7 @@ hr {
     padding-left: 0;
     float: right;
     width: 80%;
-    margin: 1em 0 0;
+    margin: 1em 5% 0;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -1680,9 +1680,9 @@ hr {
   .dt-nav li {
     display: inline-block;
     float: right;
-    width: 12%;
+    width: 70px;
     text-align: center;
-    padding: .25em 0 .25em;
+    padding: .25em .25em .25em;
     border: 2px solid white;
   }
   .dt-nav li:hover {
