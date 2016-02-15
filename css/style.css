@@ -1497,6 +1497,21 @@ hr {
   font-size: 1em;
 }
 
+.lnr-pic {
+  height: auto;
+  width: 100%;
+  margin: 0 auto 1em;
+}
+
+.cover {
+  height: auto;
+  width: 100%;
+  margin: 0 0 1em;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
 .vid-title {
   font-size: 1.5em;
   margin: 0;
@@ -1645,8 +1660,11 @@ hr {
 }
 
 @media only screen and (min-width: 40em) {
+  .cover {
+    padding: 0 10% 0;
+  }
   .container {
-    margin: 2em 15% 3em;
+    margin: 2em 5% 3em;
     transition: all .3s ease-in;
   }
   .lr-logo {
@@ -1705,18 +1723,21 @@ hr {
     margin: -.5em auto auto;
   }
   .container {
-    margin: 2em 20% 3em;
+    margin: 2em 10% 3em;
+  }
+  .news-box {
+    margin: 1em 5% 1em;
   }
 }
 
 @media only screen and (min-width: 60em) {
   .container {
-    margin: 2em 20% 3em;
+    margin: 2em 10% 3em;
   }
 }
 
 @media only screen and (min-width: 70em) {
   .container {
-    margin: 2em 20% 3em;
+    margin: 2em 10% 3em;
   }
 }
