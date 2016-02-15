@@ -244,10 +244,26 @@ hr{
         }
 }
 
+.lnr-pic{
+    height: auto;
+    width: 100%;
+    margin: 0 auto 1em;
+}
 
 
 
 
+.cover{
+    height: auto;  
+    width:100%;
+    margin: 0 0 1em;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    
+}
 
 
 .vid-title{
@@ -419,9 +435,14 @@ hr{
 
 
 @media only screen and (min-width: 40em) {
+    
+    .cover{
+       padding: 0 10% 0;
+        
+    }
 
     .container{
-        margin: 2em 15% 3em; 
+        margin: 2em 5% 3em; 
         transition: all .3s ease-in;
     }
 
@@ -492,7 +513,12 @@ hr{
     }
 
     .container{
-        margin: 2em 20% 3em;    
+        margin: 2em 10% 3em;    
+    }
+    
+    .news-box{
+        margin: 1em 5% 1em;
+        
     }
 }
 
@@ -500,7 +526,7 @@ hr{
 
 
     .container{
-        margin: 2em 20% 3em;    
+        margin: 2em 10% 3em;    
     }
 
 }
@@ -509,7 +535,7 @@ hr{
 
 
     .container{
-        margin: 2em 20% 3em;    
+        margin: 2em 10% 3em;    
     }
 }
 
