@@ -1489,7 +1489,8 @@ hr {
 
 .news-box h1 {
   margin: 0 auto .5em;
-  line-height: 1.25em;
+  line-height: 1em;
+  font-size: 1.5em;
 }
 
 .news-box h2 {
