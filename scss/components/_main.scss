@@ -227,22 +227,45 @@ hr{
 
 /* NEWS */
 
+
+
 .news-box{
     height: 100%;
     width: 100%;
     border: 2px solid $red;
     padding: 1em 5% 1em;
+    position: relative;
     margin: 0 auto 1em;
-        h1{
-            margin:0 auto .5em;
+     h1{
+            margin:1.5em auto .5em;
             line-height: 1em;
             font-size: 1.5em;
-        }
+            }
     
         h2{ 
             margin:0 auto .25em;
             font-size: 1em;
         }
+        
+        a{
+            color:$red;
+        }
+       
+}
+
+.news-bg{
+    background-color: $red;
+    position: absolute;
+    top:0;
+    left:0;
+    width: auto;
+    padding: .25em 5% .25em;
+        h2{
+            color:white;
+            
+        }
+       
+    
 }
 
 .lnr-pic{
@@ -268,24 +291,23 @@ hr{
 
 
 .vid-title{
-    font-size: 1.5em;   
+    font-size: 1.5em; 
+    line-height: 1em;
     margin:0;
     padding:0;
 
 }
 
 .vid-sub-title{
-    margin: .2em 0 1em;
+    margin: .2em 0 .5em;
     padding: 0;
 
 }
 
-.small-trenches-logo{
-    width: 120%;
-    height: 120%;
-    margin: 0;
-}
 
+.oops-page{
+    height: auto;   
+}
 
 footer{
     border-top: 3px solid #cf0a2c ;
@@ -504,6 +526,24 @@ hr{
     .top-logo{    
         margin: .2em 1em 0;
     }
+    
+    .vid-title{
+        font-size: 1.5em;   
+        margin:0;
+        padding:0;
+
+    }
+
+    .vid-sub-title{
+        margin: 0;
+        padding: 0;
+
+    }
+    
+    .band-para p{
+    padding: 0 1em 0;   
+    
+}
 
 }
 
@@ -517,10 +557,6 @@ hr{
         margin: 2em 10% 3em;    
     }
     
-    .news-box{
-        margin: 1em 5% 1em;
-        
-    }
 }
 
 @media only screen and (min-width: 60em) {
