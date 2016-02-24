@@ -217,12 +217,23 @@ filter: none;
     font-weight: 300;
     font-size: 3em;
     position: absolute;
-
-
 }
+
 
 hr{
     border: 1px solid #cf0a2c;
+}
+
+.covers{
+    width: 100%;   
+    text-align: center;
+}
+
+.album-covers{
+    padding: 1em 20% 1em;
+    height: auto;
+    width: 100%;
+    
 }
 
 
